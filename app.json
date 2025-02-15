@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ExpGo",
-    "slug": "ExpGo",
+    "slug": "expgo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sanqduonq.expgo"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "53eb3292-feba-408e-b192-9ad91c25deee"
+      }
+    },
+    "owner": "sanqduonq"
   }
 }
