@@ -10,7 +10,7 @@ interface IButton {
 const ButtonComponent = (props: IButton) => {
     return (
         <TouchableOpacity
-            className={`bg-blue-500 py-2 px-6 rounded-lg items-center justify-center ${props.isLoading ? 'opacity-70' : ''}`}
+            className={`bg-gray-800 py-2 px-6 rounded-lg items-center justify-center ${props.isLoading ? 'opacity-70' : ''}`}
             onPress={props.isLoading ? undefined : props.onPress}
             disabled = {props.isLoading}
         >
