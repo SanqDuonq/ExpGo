@@ -3,9 +3,12 @@ import { useRouter } from "expo-router";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import WelcomeHome from '../assets/images/welcome.jpg'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { registerRootComponent } from 'expo';
+import { ExpoRoot } from 'expo-router';
+
 export default function Index() {
     const router = useRouter();
-
+    const ctx = require.context('./app');
   return (
     <View className="relative w-full h-screen">
             <Image
