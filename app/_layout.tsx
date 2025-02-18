@@ -4,13 +4,13 @@ export default function RootLayout() {
     return (
         <Stack screenOptions={{ headerShown: false }}>
             <Stack.Screen
-                name="index"
+                name="index "
             />
             <Stack.Screen
-                name="login-screen"
+                name="login-screen "
             />
             <Stack.Screen
-                name="register-screen"
+                name="register-screen "
             />
         </Stack>
     )
