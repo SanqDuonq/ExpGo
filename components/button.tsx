@@ -17,7 +17,7 @@ const ButtonComponent = (props: IButton) => {
             {props.isLoading ? (
                 <View className='flex-row items-center'>
                     <ActivityIndicator size='small' color='#fff'/>
-                    <Text className='text-white ml-2 py-1'>Please wait</Text>
+                    <Text className='text-white ml-2 py-1   '>Please wait</Text>
                 </View>
             ) : (
                 <Text
