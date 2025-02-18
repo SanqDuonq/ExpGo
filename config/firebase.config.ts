@@ -3,7 +3,7 @@ import "firebase/auth";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyAXKYE5J4xtqe7nEL0Msb_hQYtQKjGgfhM",
+	apiKey: 'AIzaSyAXKYE5J4xtqe7nEL0Msb_hQYtQKjGgfhM',
 	authDomain: "expgo-b23ec.firebaseapp.com",
 	projectId: "expgo-b23ec",
 	storageBucket: "expgo-b23ec.firebasestorage.app",

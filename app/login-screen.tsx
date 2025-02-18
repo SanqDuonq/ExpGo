@@ -6,6 +6,7 @@ import InputComponent from '@/components/input'
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { useRouter } from 'expo-router'
 import Toast from 'react-native-toast-message'
+import LoginGoogleScreen from './login-google-screen'
 
 const LoginScreen = () => {
     const router = useRouter();
@@ -20,8 +21,8 @@ const LoginScreen = () => {
             email: signIn.email,
             password: signIn.password
         })
-        router.push('/home-screen')
         setIsLoading(false);
+        router.push('/home-screen');
     }
 
     return (
@@ -61,12 +62,7 @@ const LoginScreen = () => {
                     isLoading={isLoading}
                 />
             </View>
-            <View className='gap-4'>
-                <TouchableOpacity className='flex-row items-center justify-center bg-gray-200 py-3 rounded-lg px-4'>
-                    <AntDesign name='google' size={20} className='mr-2' />
-                    <Text className='text-center font-semibold text-black'>Log in with Google</Text>
-                </TouchableOpacity>
-            </View>
+            <LoginGoogleScreen/>
 
             <View className='flex-row gap-x-1 justify-center'>
                 <Text>
